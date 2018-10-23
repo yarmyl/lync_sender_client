@@ -26,14 +26,8 @@ def send_mess(srv, port, mess):
 def main():
     parser = createParser()
     namespace = parser.parse_args()
-    if namespace.srv:
-        srv = namespace.srv
-    else:
-        srv = '127.0.0.1'
-    if namespace.port:
-        port = int(namespace.port)
-    else:
-        port = 1112
+    srv = namespace.srv if namespace.srv else '127.0.0.1'
+    port = int(namespace.port) if namespace.port else 1112
     if namespace.users:
         print(send_mess(srv, port, "print users"))
     elif namespace.mess:
