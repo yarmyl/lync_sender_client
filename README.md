@@ -2,17 +2,15 @@
 
 ## USAGE
 
-usage: cli.py [-h] [--mess [MESS]] [--to [TO]] [--srv [SRV]] [--users]
-
-              [--sip [SIP]] [--port [PORT]]
-              
+**usage:** cli.py [-h] [--mess [MESS]] [--to [TO]] [--srv [SRV]] [--users]
+              [--sip [SIP]] [--port [PORT]]              
               [message]
 
-positional arguments:
+**positional arguments:**
 
   message
 
-optional arguments:
+**optional arguments:**
 
   -h, --help     show this help message and exit
   
